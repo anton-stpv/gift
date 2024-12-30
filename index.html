@@ -77,7 +77,6 @@
     <div class="icons">
         <span>🌊</span>
         <span>🏄‍♂️</span>
-        <span>🎟️</span>
     </div>
     <p>Введите ответ ниже:</p>
     <input type="text" id="answer" placeholder="Ваш ответ...">
@@ -87,11 +86,11 @@
     <script>
         function checkAnswer() {
             const userAnswer = document.getElementById('answer').value.toLowerCase().trim();
-            const correctAnswer = 'сёрфинг';
+            const correctAnswers = ['сёрфинг', 'серфинг'];
 
             if (userAnswer === correctAnswer) {
                 document.getElementById('message').innerHTML = 
-                    'Поздравляю! 🎉 Вот твой сертификат на сёрфинг: <strong>967826</strong>';
+                    'Поздравляю! 🎉 Вот твой 🎟️ на сёрфинг: <strong>967826</strong>';
             } else {
                 document.getElementById('message').innerHTML = 'Неправильно, попробуйте ещё раз! ❄️';
             }
